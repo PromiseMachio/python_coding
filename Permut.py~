@@ -1,0 +1,6 @@
+import itertools
+elements = ['a', 'b', 'c']
+
+#All permutation of the list
+permutation = list(itertools.permutation(elements))
+print("Permutation:",permutation) 

@@ -1,0 +1,17 @@
+def sum_n(n):
+    """ Recrusive function in coding is where a function calls itself in order to solve a mathematical problem. For this case 
+... Return the sum of the first n natural number.
+"""
+    if n == 0:
+        return 0
+    else:
+        return n + sum_n(n - 1)
+
+#Test the recrussiveness against the formula n(n+1)/2
+for i in range(1,11):
+    Recressive_sum = sum_n(i)
+    Formula_sum = i * (i + 1) // 2
+    print(f"n = {i}: Recressive sum = {Recressive_sum} , Formula sum = {Formula_sum}")
+""" Code explanation:
+...This code simply calls the function sum_n() in the Test code to give us the recrusive_sum result.
+"""

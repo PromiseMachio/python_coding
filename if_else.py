@@ -1,0 +1,17 @@
+#Check out this.
+x = 3
+def ifFunc1():
+    if x < 3:
+        print('Less than!')
+    else:
+        print('Greater than!')
+
+def ifFunc2():
+    x = 3
+    x = f'Less than!'if x < 3 else 'Greater than!'
+    print(x)
+
+
+print(ifFunc1())
+print(ifFunc2())
+    
